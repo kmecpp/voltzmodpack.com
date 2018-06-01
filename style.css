@@ -8,7 +8,7 @@ body {
     align-items: center;
     font-family: Verdana, sans-serif;
     margin: 0;
-    background-image: url(Minecraft-City-Wallpapers.jpg);
+    background-image: url("background.jpg");
     background-attachment: fixed;
 }
 
@@ -21,7 +21,7 @@ body:before {
     width: 100%;
     height: 100%;
     z-index: -10;
-    background: url(Minecraft-City-Wallpapers.jpg) no-repeat center center;
+    background: url("background.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -32,13 +32,13 @@ header {
     grid-area: 1 / 1 / span 1 / span 2;
     justify-self: stretch;
     align-self: stretch;
-    font-family: Helvetica, sans-serif;
+    font-family: Verdana, sans-serif;
     z-index: 1;
 }
 
 header h1 {
     text-align: center;
-    font-size: 80px;
+    font-size: 100px;
     margin-top: 150px;
 }
 
@@ -89,20 +89,27 @@ header p {
     transition-duration: 0.1s;
     color: white;
     background-color: #107896;
-    border-radius: 12px;
+    border-radius: 5px;
     display: inline-block;
+    box-shadow: 0 4px #666;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .button:hover {
     cursor: pointer;
-    box-shadow: 0 4px #999;
+    box-shadow: 0 3px #366;
     color: white;
     background-color: #C02F1D;
 }
 
 .button:active {
-    box-shadow: 0 4px #666;
-    -webkit-transform: translateY(4px);
+    box-shadow: 0 1px #666;
+    -webkit-transform: translateY(2px);
 }
 
 .img1 {
@@ -169,4 +176,13 @@ footer {
     align-self: stretch;
     text-align: center;
     justify-self: stretch;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
