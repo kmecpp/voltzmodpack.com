@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template-rows: 500px 300px 350px 300px 800px 350px 300px 250px 100px;
+    grid-template-rows: 500px 300px 350px 300px 800px 350px 300px 250px 35px;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-content: center;
@@ -76,20 +76,27 @@ header p {
     z-index: 1;
 }
 
-.download h2 {
+h2 {
     margin-bottom: 50px;
     font-size: 30px;
+}
+
+.download .button {
+    width: 140px;
+    margin: 10px;
 }
 
 .button {
     margin-right: 30px;
     margin-left: 30px;
     font-size: 20px;
-    padding: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 20px 25px 20px 25px;
     transition-duration: 0.1s;
     color: white;
+    font-family: Verdana, sans-serif;
     background-color: #107896;
     border-radius: 5px;
     display: inline-block;
