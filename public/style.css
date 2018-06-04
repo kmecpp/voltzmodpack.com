@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template-rows: 500px 280px 200px 150px 800px 150px 300px 10px 300px 10px 300px 35px;
+    grid-template-rows: 500px 280px 200px 150px 950px 150px 300px 10px 300px 10px 300px 35px;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-content: center;
@@ -10,6 +10,7 @@ body {
     margin: 0;
     background-image: url("background.jpg");
     background-attachment: fixed;
+    font-size: 18px;
 }
 
 body:before {
