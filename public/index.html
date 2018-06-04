@@ -5,6 +5,7 @@
 <head>
     <title>Voltz Community Modpack</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 </head>
 
 <body>
@@ -20,7 +21,7 @@
         <p>The Voltz Community Modpack will be the first update of Voltz to feature every single one of the original core mods. Help us create the future of Voltz.</p>
     </div>
 
-    <a class="unselectable master button" href="#downloads">Downloads</a>
+    <a class="button scroll unselectable" href="#downloads">Downloads</a>
 
     <div class="modlist">
         <h2>Mod List</h2>
@@ -72,7 +73,7 @@
     <div class="download">
         <h2>Download</h2>
         <div class="unselectable">
-            <a name="downloads"></a>
+            <div id="downloads"></div>
             <a class="button">Technic</a>
             <a class="button">Standalone</a>
             <a class="button">Curse</a>
@@ -84,7 +85,7 @@
         <h4>To get your server listed here contact
             <a href=mailto:kmecpp@gmail.com>kmecpp@gmail.com</a></h4>
     </div>
-<hr class="hr2">
+    <hr class="hr2">
     <div class="legacy">
         <h2>Legacy</h2>
         <h4>Download the original Voltz modpack here</h4>
@@ -97,6 +98,38 @@
     <div class="img2"></div>
     <div class="img3"></div>
 
+
+    <div class="hidden-code">
+
+        <script type="text/javascript">
+            // to top right away
+            if (window.location.hash) scroll(0, 0);
+            // void some browsers issue
+            setTimeout(function() {
+                scroll(0, 0);
+            }, 1);
+
+            // any position
+            $(function() {
+                // your current click function
+                $('.scroll').on('click', function(e) {
+                    e.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: $($(this).attr('href')).offset().top + 'px'
+                    }, 1000, 'swing');
+                });
+                // *only* if we have anchor on the url
+                if (window.location.hash) {
+                    // smooth scroll to the anchor id
+                    $('html, body').animate({
+                        scrollTop: $(window.location.hash).offset().top + 'px'
+                    }, 1000, 'swing');
+                }
+            });
+        </script>
+    </div>
+
 </body>
+
 
 </html>
