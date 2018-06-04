@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template-rows: 500px 300px 200px 300px 800px 350px 300px 300px 300px 35px;
+    grid-template-rows: 500px 300px 200px 300px 800px 300px 300px 10px 300px 10px 300px 35px;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-content: center;
@@ -152,7 +152,7 @@ a {
 }
 
 .legacy {
-    grid-area: 8 / 1 / span 1 / span 2;
+    grid-area: 9 / 1 / span 1 / span 2;
     text-align: center;
     justify-self: stretch;
     align-self: stretch;
@@ -164,7 +164,7 @@ a {
 }
 
 .servers {
-    grid-area: 9 / 1 / span 1 / span 2;
+    grid-area: 11 / 1 / span 1 / span 2;
     text-align: center;
     justify-self: stretch;
     align-self: stretch;
@@ -172,7 +172,7 @@ a {
 }
 
 footer {
-    grid-area: 10 / 1 / span 1 / span 2;
+    grid-area: 12 / 1 / span 1 / span 2;
     align-self: stretch;
     text-align: center;
     justify-self: stretch;
@@ -204,14 +204,24 @@ footer {
 }
 
 .img3 {
-    grid-area: 7 / 1 / span 4 / span 2;
+    grid-area: 7 / 1 / span 6 / span 2;
     justify-self: stretch;
     align-self: stretch;
     background-image: url(foreground.jpg);
 }
 
-.hr2 {
-    grid-area: 8 / 1 / span 1 / span 2;
-    align-self: baseline;
+.break1 {
     z-index: 1;
+    background-color: #107896;
+    grid-area: 8 / 1 / span 1 / span 2;
+    justify-self: stretch;
+    align-self: stretch;
+}
+
+.break2 {
+    z-index: 1;
+    background-color: #107896;
+    grid-area: 10 / 1 / span 1 / span 2;
+    justify-self: stretch;
+    align-self: stretch;
 }
