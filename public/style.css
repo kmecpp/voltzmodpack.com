@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template-rows: 500px 300px 350px 300px 800px 350px 300px 250px 35px;
+    grid-template-rows: 500px 300px 200px 300px 800px 350px 300px 300px 300px 35px;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-content: center;
@@ -67,12 +67,8 @@ header p {
     line-height: 1.5;
 }
 
-.download {
+.master {
     grid-area: 3 / 1 / span 1 / span 2;
-    text-align: center;
-    padding-bottom: 150px;
-    justify-self: stretch;
-    align-self: stretch;
     z-index: 1;
 }
 
@@ -147,12 +143,19 @@ a {
     text-decoration: none;
 }
 
-.legacy {
+.download {
     grid-area: 7 / 1 / span 1 / span 2;
     text-align: center;
     justify-self: stretch;
     align-self: stretch;
-    padding-top: 30px;
+    z-index: 1;
+}
+
+.legacy {
+    grid-area: 8 / 1 / span 1 / span 2;
+    text-align: center;
+    justify-self: stretch;
+    align-self: stretch;
     z-index: 1;
 }
 
@@ -161,7 +164,7 @@ a {
 }
 
 .servers {
-    grid-area: 8 / 1 / span 1 / span 2;
+    grid-area: 9 / 1 / span 1 / span 2;
     text-align: center;
     justify-self: stretch;
     align-self: stretch;
@@ -169,7 +172,7 @@ a {
 }
 
 footer {
-    grid-area: 9 / 1 / span 1 / span 2;
+    grid-area: 10 / 1 / span 1 / span 2;
     align-self: stretch;
     text-align: center;
     justify-self: stretch;
@@ -183,6 +186,7 @@ footer {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
 }
 
 .img1 {
@@ -200,8 +204,14 @@ footer {
 }
 
 .img3 {
-    grid-area: 7 / 1 / span 3 / span 2;
+    grid-area: 7 / 1 / span 4 / span 2;
     justify-self: stretch;
     align-self: stretch;
     background-image: url(foreground.jpg);
+}
+
+.hr2 {
+    grid-area: 8 / 1 / span 1 / span 2;
+    align-self: baseline;
+    z-index: 1;
 }
