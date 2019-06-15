@@ -150,6 +150,11 @@ h2 {
     enabl
 }
 
+.wiki {
+    align-content: right;
+    float: right;
+}
+
 .modlist {
     z-index: 1;
     grid-area: 5 / 1 / span 1 / span 1;
